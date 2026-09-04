@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #f3eadb;
+    color: #3f3428;
+}
+
+/* Main Container */
+
+.todo-container {
+    width: 100%;
+    max-width: 650px;
+    min-height: 600px;
+    background: #fffaf2;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(80, 60, 40, 0.15);
+}
+
+/* Header */
+
+.header {
+    text-align: center;
+    padding: 35px 20px 30px;
+    background: #e6d3b3;
+}
+
+.header-icon {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #8b6f47;
+    color: white;
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+.header h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #3f3428;
+    margin-bottom: 8px;
+}
+
+.header p {
+    margin: 0;
+    color: #6b5a45;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* Input */
+
+.input-box {
+    display: flex;
+    margin: 25px 25px 15px;
+    background: white;
+    border: 1px solid #d8c6aa;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.input-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 14px 16px;
+    font-size: 16px;
+    color: #3f3428;
+    background: transparent;
+}
+
+.input-box input:focus {
+    box-shadow: none;
+}
+
+.input-box input::placeholder {
+    color: #a39583;
+}
+
+.add-btn {
+    width: 55px;
+    border: none;
+    border-radius: 0;
+    background: #8b6f47;
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background: #6f5738;
+    color: white;
+}
+
+/* Filters */
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px 20px;
+}
+
+.filter-btn {
+    border: 1px solid #d8c6aa;
+    background: #f8f1e6;
+    color: #6b5a45;
+    padding: 9px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter-btn i {
+    margin-right: 5px;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #8b6f47;
+    color: white;
+    border-color: #8b6f47;
+}
+
+/* Tasks */
+
+#taskList {
+    padding: 0 15px 20px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    padding: 15px;
+    background: #f8f1e6;
+    border: 1px solid #e4d6c1;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.task:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(80, 60, 40, 0.08);
+}
+
+/* Task Text */
+
+.task-text {
+    flex: 1;
+    font-size: 16px;
+    color: #3f3428;
+    word-break: break-word;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #9b8d7a;
+    opacity: 0.7;
+}
+
+/* Task Buttons */
+
+.task button {
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    color: #6b5a45;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.task button:hover {
+    background: #e6d3b3;
+    color: #3f3428;
+}
+
+/* Edit Area */
+
+.edit-input {
+    flex: 1;
+    border: 1px solid #c8b496;
+    border-radius: 6px;
+    padding: 8px 10px;
+    outline: none;
+    font-size: 15px;
+    background: white;
+    color: #3f3428;
+}
+
+/* Empty Message */
+
+.empty-message {
+    text-align: center;
+    padding: 35px 20px;
+    color: #a39583;
+}
+
+.empty-message i {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.empty-message p {
+    margin: 0;
+    font-size: 15px;
+}
+
+/* Mobile */
+
+@media (max-width: 576px) {
+
+    body {
+        padding: 0;
+    }
+
+    .container {
+        padding: 20px 12px !important;
+    }
+
+    .todo-container {
+        border-radius: 15px;
+    }
+
+    .header {
+        padding: 30px 15px;
+    }
+
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .input-box {
+        margin: 20px 15px 10px;
+    }
+
+    .filters {
+        gap: 6px;
+        flex-wrap: wrap;
+    }
+
+    .filter-btn {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .task {
+        padding: 12px;
+    }
+
+    .task button {
+        width: 32px;
+        height: 32px;
+    }
+}
+
