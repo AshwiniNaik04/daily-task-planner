@@ -1,80 +1,75 @@
-Daily Task Planner
+# Daily Task Planner
 
-A responsive browser-based Daily Task Planner built using HTML5, CSS3, Bootstrap 5, and JavaScript. The application allows users to add, edit, complete, filter, and delete tasks while automatically saving tasks in the browser using localStorage.
+A responsive browser-based **Daily Task Planner** built using HTML5, CSS3, Bootstrap 5, and JavaScript. It allows users to add, edit, complete, filter, and delete tasks while storing them in the browser using `localStorage`.
 
-🚀 Features
-Display the current date
-Add new tasks
-Add tasks using the Enter key
-Prevent empty tasks
-Edit tasks inline
-Save edited tasks
-Cancel editing
-Mark tasks as completed
-Toggle completed tasks back to pending
-Delete tasks
-Filter tasks by:
-All
-Pending
-Completed
-Persist tasks using browser localStorage
-Responsive design for desktop and mobile devices
-Bootstrap 5 responsive layout
-Font Awesome icons for task actions
+## 🚀 Features
 
-🛠️ Technologies Used
-HTML5 – Structure of the application
-CSS3 – Custom styling and beige-themed UI
-Bootstrap 5 – Responsive layout and UI components
-JavaScript – DOM manipulation, events, CRUD operations, and filtering
-LocalStorage – Persistent browser-side task storage
-Font Awesome – Interface icons
-Git & GitHub – Version control and repository hosting
-Netlify – Deployment
+* Display the current date
+* Add new tasks
+* Add tasks using the **Enter** key
+* Prevent empty tasks
+* Edit tasks inline
+* Save edited tasks
+* Cancel editing
+* Mark tasks as completed
+* Toggle tasks between completed and pending
+* Delete tasks
+* Filter tasks by All, Pending, or Completed
+* Store tasks using browser `localStorage`
+* Responsive design for desktop and mobile
+* Bootstrap 5 layout
+* Font Awesome icons
 
-📂 Project Structure
+## 🛠️ Technologies Used
+
+* HTML5
+* CSS3
+* Bootstrap 5
+* JavaScript
+* LocalStorage
+* Font Awesome
+* Git & GitHub
+* Netlify
+
+## 📂 Project Structure
+
+```text
 daily-task-planner/
 │
 ├── index.html
 ├── style.css
 ├── script.js
 └── README.md
+```
 
-📌 How It Works
-1. Add Task
+## 📌 How It Works
 
-Enter a task in the input field and click the Add button. You can also press Enter to add the task.
+### 1. Add Task
 
-2. Complete Task
+Enter a task in the input field and click the **Add** button. You can also press **Enter** to add a task.
 
-Click the check icon to mark a task as completed. Completed tasks are displayed with a strike-through effect.
+### 2. Complete Task
 
-Click the check icon again to move the task back to the pending state.
+Click the **check icon** to mark a task as completed. The task will appear with a strike-through effect.
 
-3. Edit Task
+Click the check icon again to move the task back to pending.
 
-Click the edit icon to modify a task.
+### 3. Edit Task
 
-The application provides:
+Click the **edit icon** to modify a task. The task can then be updated using the **Save** button or reverted using **Cancel**.
 
-Save
-Cancel
+### 4. Delete Task
 
-The updated task is automatically saved to localStorage.
+Click the **delete icon** to remove a task from the task list.
 
-4. Delete Task
+### 5. Filter Tasks
 
-Click the delete icon to permanently remove a task from the current task list.
+Tasks can be filtered using:
 
-5. Filter Tasks
+* **All** – Displays all tasks
+* **Pending** – Displays incomplete tasks
+* **Completed** – Displays completed tasks
 
-Tasks can be filtered using three options:
+### 6. LocalStorage
 
-All        → Displays all tasks
-Pending    → Displays incomplete tasks
-Completed  → Displays completed tasks
-6. LocalStorage
-
-Tasks are stored in the browser using JavaScript localStorage.
-
-Therefore, tasks remain available even after refreshing the page on the same browser and device.
+Tasks are stored in the browser using JavaScript `localStorage`, so the task list remains available after refreshing the page on the same browser and device.
