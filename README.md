@@ -2,7 +2,11 @@
 
 A responsive browser-based **Daily Task Planner** built using HTML5, CSS3, Bootstrap 5, and JavaScript. It allows users to add, edit, complete, filter, and delete tasks while storing them in the browser using `localStorage`.
 
-## 🚀 Features
+## Live Demo
+
+(https://ashwini-daily-task-planner.netlify.app/)
+
+## Features
 
 * Display the current date
 * Add new tasks
@@ -20,7 +24,7 @@ A responsive browser-based **Daily Task Planner** built using HTML5, CSS3, Boots
 * Bootstrap 5 layout
 * Font Awesome icons
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 * HTML5
 * CSS3
@@ -31,7 +35,7 @@ A responsive browser-based **Daily Task Planner** built using HTML5, CSS3, Boots
 * Git & GitHub
 * Netlify
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 daily-task-planner/
@@ -42,7 +46,7 @@ daily-task-planner/
 └── README.md
 ```
 
-## 📌 How It Works
+## How It Works
 
 ### 1. Add Task
 
